@@ -5,7 +5,7 @@ const Navbar = () => {
     <div>
       <header className="p-4 bg-gray-800 text-white">
         <div className="container flex justify-between items-center h-16 mx-auto">
-          <h1 className="text-2xl font-bold">MU</h1>
+          <h1 className="text-2xl font-bold">MUH</h1>
 
           {/* Desktop Menu */}
           <ul className="hidden space-x-4 md:flex">
