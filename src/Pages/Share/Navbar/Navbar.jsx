@@ -3,43 +3,23 @@ import { NavLink } from "react-router-dom";
 const Navbar = () => {
   return (
     <div className="p-4 bg-slate-900 text-slate-100 top-3 sticky z-30">
-      <div className="container flex justify-between items-center h-16 mx-auto ">
+      <div className="flex justify-between items-center h-16 w-11/12 md:w-11/12 lg:w-11/12 xl:w-11/12 2xl:container mx-auto ">
         <h1 className="text-2xl font-bold">MUH</h1>
 
         {/* Desktop Menu */}
-        <ul className="hidden space-x-4 md:flex">
-          <NavLink
-            to="/"
-            className={({ isActive }) =>
-              isActive ? "text-blue-500 font-bold" : "hover:text-blue-400"
-            }
-          >
+        <ul className="hidden md:flex gap-10">
+          <NavLink to="/" className="">
             Home
           </NavLink>
-          <NavLink
-            to="/projects"
-            className={({ isActive }) =>
-              isActive ? "text-blue-500 font-bold" : "hover:text-blue-400"
-            }
-          >
+          <NavLink to="/projects" className="">
             Projects
           </NavLink>
 
-          <NavLink
-            to="/about"
-            className={({ isActive }) =>
-              isActive ? "text-blue-500 font-bold" : "hover:text-blue-400"
-            }
-          >
+          <NavLink to="/about" className="">
             About
           </NavLink>
 
-          <NavLink
-            to="/contact"
-            className={({ isActive }) =>
-              isActive ? "text-blue-500 font-bold" : "hover:text-blue-400"
-            }
-          >
+          <NavLink to="/contact" className="">
             Contact
           </NavLink>
         </ul>
@@ -64,20 +44,20 @@ const Navbar = () => {
           </button>
           <ul
             tabIndex={0}
-            className="menu dropdown-content mt-2 z-40 p-2 shadow bg-white rounded-xl w-28 -ml-10"
+            className="menu dropdown-content mt-2 z-10 p-2 gap-2 shadow bg-white text-black rounded-xl w-28 -ml-10"
           >
-            <NavLink to="/" className="text-blue-500 font-bold">
+            <NavLink to="/" className="">
               Home
             </NavLink>
-            <NavLink to="/projects" className="text-blue-500 font-bold">
+            <NavLink to="/projects" className="">
               Projects
             </NavLink>
 
-            <NavLink to="/about" className="text-blue-500 font-bold">
+            <NavLink to="/about" className="">
               About
             </NavLink>
 
-            <NavLink to="/contact" className="text-blue-500 font-bold">
+            <NavLink to="/contact" className="">
               Contact
             </NavLink>
           </ul>
