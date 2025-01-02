@@ -1,16 +1,15 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import handIcon from "../../assets/icons/icons8-hand-48.png";
+
 import { Link } from "react-router-dom";
 const MyIdentity = () => {
   return (
     <div className="w-10/12 md:w-10/12 lg:w-10/12 xl:w-10/12 2xl:container mx-auto pt-10">
       <p className="text-slate-100 flex items-end text-xl font-semibold pb-3">
-        Hi,<img src={handIcon} className="w-8 h-7 object-cover"></img>
-        <span> I'm</span>
+        Hey👋!
       </p>
       <h1 className=" text-6xl font-semibold tracking-wide text-white">
         <span className="bg-gradient-to-r from-purple-600 via-cyan-500 via-sky-600  to-pink-600 text-transparent bg-clip-text drop-shadow-lg">
-          Mukit Hossen
+          <span> I&apos;m</span> Mukit Hossen
         </span>
       </h1>
       <h3 className="text-slate-100 text-3xl font-semibold pt-7">
