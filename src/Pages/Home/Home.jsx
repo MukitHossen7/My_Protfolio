@@ -1,3 +1,4 @@
+import ContactUs from "../../Components/ContactUs/ContactUs";
 import MyIdentity from "../../Components/MyIdentity/MyIdentity";
 import MySkills from "../../Components/MySkills/MySkills";
 
@@ -7,6 +8,7 @@ const Home = () => {
       <div>
         <MyIdentity></MyIdentity>
         <MySkills></MySkills>
+        <ContactUs></ContactUs>
       </div>
     </div>
   );
