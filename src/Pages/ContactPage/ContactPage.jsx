@@ -4,7 +4,7 @@ import { MdCall } from "react-icons/md";
 import social from "../../../src/assets/images/Feedback-amico.svg";
 const ContactPage = () => {
   return (
-    <div className="pt-8 pb-28 w-10/12 md:w-10/12 lg:w-10/12 xl:w-10/12 2xl:container mx-auto">
+    <div className="pt-8 pb-28 w-10/12 md:w-10/12 lg:w-10/12 xl:container mx-auto">
       {/* Heading */}
       <motion.h1
         className="text-3xl font-semibold  text-center text-gray-100 mb-10"

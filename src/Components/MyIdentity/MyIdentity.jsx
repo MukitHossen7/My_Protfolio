@@ -3,7 +3,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { Link } from "react-router-dom";
 const MyIdentity = () => {
   return (
-    <div className="w-10/12 md:w-10/12 lg:w-10/12 xl:w-10/12 2xl:container mx-auto pt-10">
+    <div className="w-10/12 md:w-10/12 lg:w-10/12 xl:container mx-auto pt-10">
       <p className="text-slate-100 flex items-end text-xl font-semibold pb-3">
         Hey👋!
       </p>
