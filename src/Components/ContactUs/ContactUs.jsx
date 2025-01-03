@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { CiLocationOn, CiMail } from "react-icons/ci";
 import { MdCall } from "react-icons/md";
-import social from "../../../src/assets/images/social-media-carousel-90.png";
+import social from "../../../src/assets/images/Feedback-amico.svg";
 
 const ContactUs = () => {
   return (
@@ -26,7 +26,7 @@ const ContactUs = () => {
       >
         {/* Phone */}
         <div className="group flex flex-col items-center relative">
-          <MdCall className="text-6xl bg-teal-300/20 p-3 rounded-md text-teal-400 group-hover:translate-y-2 transition-all duration-300" />
+          <MdCall className="text-6xl  bg-teal-900 p-3 rounded-md text-teal-400 group-hover:translate-y-2 transition-all duration-300" />
           <div className="absolute top-20 opacity-0 group-hover:opacity-100 transition-all duration-300 text-teal-400 text-center">
             <p className="text-lg font-medium text-gray-100">Call Me</p>
             <p className="text-sm text-gray-300">+8801326153447</p>
@@ -35,7 +35,7 @@ const ContactUs = () => {
 
         {/* Location */}
         <div className="group flex flex-col items-center relative">
-          <CiLocationOn className="text-6xl bg-sky-300/20 rounded-md p-3 text-sky-400 group-hover:translate-y-2 transition-all duration-300" />
+          <CiLocationOn className="text-6xl  bg-sky-900  rounded-md p-3 text-sky-400 group-hover:translate-y-2 transition-all duration-300" />
           <div className="absolute top-20 opacity-0 group-hover:opacity-100 transition-all duration-300 text-gray-100 text-center">
             <p className="text-lg font-medium text-gray-100">Location</p>
             <p className="text-sm text-gray-300">Naogaon,Dhamoirhat</p>
@@ -44,7 +44,7 @@ const ContactUs = () => {
 
         {/* Email */}
         <div className="group flex flex-col items-center relative">
-          <CiMail className="text-6xl bg-pink-300/20 rounded-md p-3 text-pink-600 group-hover:translate-y-2 transition-all duration-300" />
+          <CiMail className="text-6xl bg-pink-900 rounded-md p-3 text-white group-hover:translate-y-2 transition-all duration-300" />
           <div className="absolute top-20 opacity-0 group-hover:opacity-100 transition-all duration-300  text-center">
             <p className="text-lg font-medium text-gray-100">Email</p>
             <p className="text-sm text-gray-300">hossenmukit7@gmail.com</p>
@@ -53,10 +53,10 @@ const ContactUs = () => {
       </motion.div>
 
       {/* Form and Illustration */}
-      <div className="flex gap-10 flex-col md:flex-row items-center justify-center w-full  overflow-hidden mt-14">
+      <div className="flex gap-10 flex-col md:flex-row lg:flex-row items-center justify-center overflow-hidden mt-24 lg:mt-24">
         {/* Form */}
         <motion.form
-          className="flex-1 flex flex-col space-y-6 p-8 bg-gray-900 rounded-xl shadow-lg "
+          className="w-full lg:w-1/2 space-y-6 p-8 bg-slate-900 rounded-xl shadow-lg "
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
@@ -64,17 +64,17 @@ const ContactUs = () => {
           <input
             type="text"
             placeholder="Your Name"
-            className="w-full p-4 bg-gray-800 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500 placeholder-gray-400 text-white"
+            className="w-full p-4 bg-slate-800 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500 placeholder-gray-400 text-white"
           />
           <input
             type="email"
             placeholder="Your Email"
-            className="w-full p-4 bg-gray-800 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500 placeholder-gray-400 text-white"
+            className="w-full p-4 bg-slate-800 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500 placeholder-gray-400 text-white"
           />
           <textarea
             placeholder="Your Message"
             rows="5"
-            className="w-full p-4 bg-gray-800 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500 placeholder-gray-400 text-white"
+            className="w-full p-4 bg-slate-800 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500 placeholder-gray-400 text-white"
           ></textarea>
           <motion.button
             type="submit"
@@ -87,7 +87,7 @@ const ContactUs = () => {
 
         {/* Illustration */}
         <motion.div
-          className="flex-1  "
+          className="w-full md:hidden lg:block lg:w-1/2 "
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8 }}
@@ -95,7 +95,7 @@ const ContactUs = () => {
           <img
             src={social}
             alt="Contact Illustration"
-            className="w-full h-auto "
+            className="w-full h-full lg:h-[450px] "
           />
         </motion.div>
       </div>
