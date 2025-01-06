@@ -4,16 +4,26 @@ import { MdCall } from "react-icons/md";
 import social from "../../../src/assets/images/Feedback-amico.svg";
 const ContactPage = () => {
   return (
-    <div className="pt-8 pb-28 w-10/12 md:w-10/12 lg:w-10/12 xl:container mx-auto">
+    <div className="pt-8 pb-20 w-10/12 md:w-10/12 lg:w-10/12 xl:container mx-auto">
       {/* Heading */}
       <motion.h1
-        className="text-3xl font-semibold  text-center text-gray-100 mb-10"
+        className="text-3xl font-semibold  text-center text-gray-100 mb-5"
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
         Get In Touch
       </motion.h1>
+      <motion.p
+        className="text-center text-gray-100 mb-10 lg:w-[700px] mx-auto"
+        initial={{ opacity: 0, y: -50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+      >
+        Whether you have a question, feedback, or just want to say hello, feel
+        free to send me a message. I’ll make sure to respond as soon as
+        possible!
+      </motion.p>
       {/* Contact Info */}
       <motion.div
         className="flex  flex-row justify-evenly"

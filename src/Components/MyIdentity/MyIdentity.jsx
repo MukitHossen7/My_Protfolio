@@ -7,9 +7,10 @@ const MyIdentity = () => {
       <p className="text-slate-100 flex items-end text-xl font-semibold pb-3">
         Hey👋!
       </p>
-      <h1 className=" text-6xl font-semibold tracking-wide text-white">
+      <h1 className=" text-6xl font-semibold tracking-wide">
+        <span className="text-gray-100 pr-3"> I&apos;m</span>
         <span className="bg-gradient-to-r from-purple-600 via-cyan-500 via-sky-600  to-pink-600 text-transparent bg-clip-text drop-shadow-lg">
-          <span> I&apos;m</span> Mukit Hossen
+          Mukit Hossen
         </span>
       </h1>
       <h3 className="text-slate-100 text-3xl font-semibold pt-7">
@@ -29,6 +30,18 @@ const MyIdentity = () => {
         <Link to="https://github.com/MukitHossen7" target="_blank">
           <FaLinkedin className="text-gray-200 text-3xl" />
         </Link>
+      </div>
+
+      <div className="mt-9">
+        <div className="relative inline-flex  group">
+          <div className="absolute transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
+          <button
+            className="relative inline-flex items-center justify-center px-4 py-4   text-white transition-all duration-200 bg-slate-900  font-medium  rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-900"
+            role="button"
+          >
+            Download Resume
+          </button>
+        </div>
       </div>
     </div>
   );
