@@ -1,3 +1,6 @@
+import { AwesomeButton } from "react-awesome-button";
+import "react-awesome-button/dist/styles.css";
+
 // eslint-disable-next-line react/prop-types
 const Cards = ({ project }) => {
   const { name, image, description, features } = project || {};
@@ -44,6 +47,11 @@ const Cards = ({ project }) => {
             className="bg-gray-600 hover:bg-gray-700 text-white px-4 py-2 rounded text-sm"
           >
             Github
+          </a>
+          <a>
+            <AwesomeButton type="primary" style={{ background: "red" }}>
+              Primary
+            </AwesomeButton>
           </a>
         </div>
       </div>
