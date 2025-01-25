@@ -4,9 +4,9 @@ import Footer from "../Pages/Share/Footer/Footer";
 
 const MainLayout = () => {
   return (
-    <div className="flex flex-col min-h-screen bg-[#000000] bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px]">
+    <div className="bg-[#000000]">
       <Navbar></Navbar>
-      <div className="flex-grow">
+      <div className="">
         <Outlet></Outlet>
       </div>
       <Footer></Footer>

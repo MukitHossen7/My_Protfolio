@@ -1,7 +1,7 @@
 const AboutMe = () => {
   return (
     <div className="my-24">
-      <div className="top-0 z-[-2] bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))] py-20">
+      <div className>
         <div className="w-10/12 md:w-10/12 lg:w-10/12 xl:container mx-auto items-center justify-center grid grid-cols-1 lg:grid-cols-2 gap-8">
           <div className="flex justify-center">
             <img
