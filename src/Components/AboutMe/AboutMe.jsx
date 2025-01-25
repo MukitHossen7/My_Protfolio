@@ -4,9 +4,10 @@ const AboutMe = () => {
       <div className>
         <div className="w-10/12 md:w-10/12 lg:w-10/12 xl:container mx-auto items-center justify-center grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-0">
           <div className="">
-            <h1 className="text-2xl font-bold text-gray-50 mb-4  border-b-2 border-[#3CCF91]">
+            <h1 className="text-2xl font-bold text-gray-50 border-spacing-x-3.5 border-b-2 border- border-[#3CCF91] mb-4">
               About Me
             </h1>
+
             <p className="text-gray-400 font-normal text-sm leading-relaxed mb-4">
               Hi! I&apos;m <span className="text-[#3CCF91]">Mukit Hossen</span>.
               My fascination with computers began at an early age, sparking a
@@ -32,7 +33,7 @@ const AboutMe = () => {
           </div>
           <div className="flex justify-center ">
             <img
-              src="https://i.ibb.co.com/Bc3Jt9R/download.jpg"
+              src="https://i.ibb.co.com/z27nh0m/New-Project.png"
               alt="Profile"
               className="rounded-full object-cover shadow-lg w-48 md:w-72 h-48 md:h-72 "
             />
