@@ -1,39 +1,41 @@
 [
   {
     "_id": "1",
-    "name": "Eco-Adventure Experiences",
-    "image": "https://raw.githubusercontent.com/muhammadranju/Batch10-Assignment-9/main/public/screenshot/home.jpeg",
-    "description": "A platform offering eco-friendly travel adventures with detailed information on various experiences.",
-    "features": ["React.js", "React Bootstrap", "Node.js", "Express.js"]
-  },
-  {
-    "_id": "2",
-    "name": "Gadget Heaven E-commerce",
-    "image": "https://raw.githubusercontent.com/muhammadranju/Batch10-Assignment-9/main/public/screenshot/home.jpeg",
-    "description": "An e-commerce platform where users can adopt or buy pets and view detailed pet information.",
+    "name": "Food Sharing",
+    "image": "https://i.ibb.co.com/ggxmKWF/Screenshot-2025-01-25-235937.png",
+    "description": "This platform aims to reduce food waste by connecting donors with those in need, serving as a bridge for sharing surplus food in the community.",
     "features": [
       "React.js",
-      "React Bootstrap",
+      "Tailwind",
       "Node.js",
       "Express.js",
       "MongoDB",
-      "Stripe.js",
-      "Firebase Authentication"
+      "Firebase",
+      "JWT",
+      "TanStack Query"
+    ]
+  },
+  {
+    "_id": "2",
+    "name": "Movie Portal",
+    "image": "https://i.ibb.co.com/McWfFwg/Screenshot-2025-01-25-235614.png",
+    "description": "The Movie Portal is a user-friendly platform for exploring, adding, and managing movies, offering robust features and a responsive design for movie enthusiasts.",
+    "features": [
+      "React.js",
+      "Tailwind",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Firebase",
+      "JWT",
+      "React Router"
     ]
   },
   {
     "_id": "3",
-    "name": "Movie Portal",
+    "name": "Unknown Project",
     "image": "https://raw.githubusercontent.com/muhammadranju/Batch10-Assignment-9/main/public/screenshot/home.jpeg",
-    "description": "A full-stack single-page car repair web app where people can take and book services. Login system with Firebase and private routes. Dashboard for users and admins where admins can do CRUD operations and users can give reviews and monitor their booking list.",
-    "features": [
-      "React.js",
-      "React Bootstrap",
-      "Node.js",
-      "Express.js",
-      "MongoDB",
-      "Stripe.js",
-      "Firebase Authentication"
-    ]
+    "description": "A full-stack single-page car repair web app where people can take and book services. Login system with Firebase and private routes.",
+    "features": ["React.js", "React Bootstrap", "Node.js", "Express.js"]
   }
 ]

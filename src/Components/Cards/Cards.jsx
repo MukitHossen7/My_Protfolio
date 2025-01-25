@@ -1,32 +1,29 @@
-import { AwesomeButton } from "react-awesome-button";
 import "react-awesome-button/dist/styles.css";
-
+// bg-[#080808]
 // eslint-disable-next-line react/prop-types
 const Cards = ({ project }) => {
   const { name, image, description, features } = project || {};
   return (
-    <div className="w-full bg-slate-900 rounded-lg shadow-lg overflow-hidden flex flex-col h-full">
+    <div className="w-full bg-black rounded-md shadow-md overflow-hidden flex flex-col border border-gray-800">
       {/* Image Section */}
-      <div className="relative h-52 px-2 pt-2 overflow-hidden group">
+      <div className="">
         <img
           src={image}
           alt="Gerez - Car Repair Services"
-          className="w-full h-auto object-cover transform group-hover:translate-y-[-74%] transition-transform duration-[3s] ease-in-out rounded-md"
+          className="w-full h-60 object-cover rounded-2xl p-3"
         />
       </div>
 
       {/* Card Content */}
       <div className="flex flex-col justify-between flex-grow px-4 pb-4">
         <div>
-          <h3 className="text-xl font-semibold pt-5 pb-3 text-gray-100">
-            {name}
-          </h3>
-          <p className="text-sm text-gray-300 pb-5">{description}</p>
+          <h3 className="text-lg font-semibold  pb-3 text-gray-100">{name}</h3>
+          <p className="text-sm text-gray-400 pb-5">{description}</p>
           <div className="flex flex-wrap gap-2 ">
             {features.map((feature, index) => (
               <span
                 key={index}
-                className="px-2 py-1 bg-slate-800 text-gray-200 rounded text-sm"
+                className="px-2 py-1 bg-[#292929] text-gray-100 rounded text-sm"
               >
                 {feature}
               </span>
@@ -47,11 +44,6 @@ const Cards = ({ project }) => {
             className="bg-gray-600 hover:bg-gray-700 text-white px-4 py-2 rounded text-sm"
           >
             Github
-          </a>
-          <a>
-            <AwesomeButton type="primary" style={{ background: "red" }}>
-              Primary
-            </AwesomeButton>
           </a>
         </div>
       </div>
