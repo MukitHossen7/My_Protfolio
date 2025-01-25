@@ -7,11 +7,11 @@ const MyIdentity = () => {
       <p className="text-[#3CCF91] flex items-end text-3xl font-semibold pb-1">
         Hey there!, I&apos;m-
       </p>
-      <h1 className="text-7xl font-semibold tracking-wide">
-        <span className="text-gray-100">Mukit Hossen</span>
+      <h1 className="text-8xl font-extrabold tracking-wide">
+        <span className="text-gray-50">Mukit Hossen</span>
       </h1>
       <h3 className="text-gray-500 text-3xl font-semibold pt-5">
-        I am a <span className="text-gray-100">Front-End React</span> Developer{" "}
+        I am a <span className="text-gray-50">Front-End React</span> Developer{" "}
       </h3>
       <p className="text-gray-400 w-full lg:max-w-3xl  text-lg pt-5">
         I am a passionate{" "}
@@ -27,7 +27,7 @@ const MyIdentity = () => {
           className="flex gap-2 px-3 py-2 bg-[#292929] rounded-md"
         >
           <FaGithub className="text-[#3CCF91] text-lg" />
-          <span className="text-gray-100 text-sm font-medium">GitHub</span>
+          <span className="text-gray-50 text-sm font-medium">GitHub</span>
         </Link>
 
         <Link
@@ -36,20 +36,14 @@ const MyIdentity = () => {
           className="flex gap-2 px-3 py-2 bg-[#292929] rounded-md"
         >
           <FaLinkedin className="text-[#3CCF91] text-lg" />
-          <span className="text-gray-100 text-sm font-medium">LinkedIn</span>
+          <span className="text-gray-50 text-sm font-medium">LinkedIn</span>
         </Link>
         <Link className="flex gap-2 px-3 py-2 bg-[#292929] rounded-md">
           <CiSaveDown1 className="text-[#3CCF91] text-lg font-bold" />
-          <span className="text-gray-100 text-sm font-medium">
+          <span className="text-gray-50 text-sm font-medium">
             Download Resume
           </span>
         </Link>
-      </div>
-
-      <div className="mt-9">
-        <div className="relative inline-flex  group">
-          <div className="absolute transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
-        </div>
       </div>
     </div>
   );
