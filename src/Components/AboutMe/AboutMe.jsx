@@ -4,11 +4,9 @@ const AboutMe = () => {
       <div className>
         <div className="w-10/12 md:w-10/12 lg:w-10/12 xl:container mx-auto items-center justify-center grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-0">
           <div className="">
-            <h1 className="text-2xl font-bold text-gray-50 border-spacing-x-3.5 border-b-2 border- border-[#3CCF91] mb-4">
-              About Me
-            </h1>
-
-            <p className="text-gray-400 font-normal text-sm leading-relaxed mb-4">
+            <h1 className="text-2xl font-bold text-gray-50">About Me</h1>
+            <span className="block border-b-2 w-10 border-[#3CCF91]"></span>
+            <p className="text-gray-400 font-normal text-sm leading-relaxed pt-6 mb-4">
               Hi! I&apos;m <span className="text-[#3CCF91]">Mukit Hossen</span>.
               My fascination with computers began at an early age, sparking a
               lifelong passion for technology and problem-solving.
