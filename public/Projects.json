@@ -13,7 +13,9 @@
       "Firebase",
       "JWT",
       "TanStack Query"
-    ]
+    ],
+    "live_link": "https://food-sharing-bddd1.web.app",
+    "github_link": "https://github.com/MukitHossen7/B10A11-Food-Sharing-Website"
   },
   {
     "_id": "2",
@@ -29,7 +31,9 @@
       "Firebase",
       "JWT",
       "React Router"
-    ]
+    ],
+    "live_link": "https://movie-portal-f63b6.web.app/",
+    "github_link": "https://github.com/MukitHossen7/B10A10-Movie-Protal"
   },
   {
     "_id": "3",

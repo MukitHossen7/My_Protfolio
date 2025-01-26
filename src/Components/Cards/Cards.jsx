@@ -1,8 +1,10 @@
 import "react-awesome-button/dist/styles.css";
+import { Link } from "react-router-dom";
 // bg-[#080808]
 // eslint-disable-next-line react/prop-types
 const Cards = ({ project }) => {
-  const { name, image, description, features } = project || {};
+  const { name, image, description, features, live_link, github_link } =
+    project || {};
   return (
     <div className="w-full bg-black rounded-md shadow-md overflow-hidden flex flex-col border border-gray-800">
       {/* Image Section */}
@@ -33,18 +35,21 @@ const Cards = ({ project }) => {
 
         {/* Buttons */}
         <div className="flex flex-row gap-2 mt-7">
-          <a
-            href="#"
-            className="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded text-sm"
+          <Link
+            to={`${live_link}`}
+            target="_blank"
+            className="bg-black border-2 border-[#3CCF91] text-[#3CCF91] hover:text-black hover:bg-[#3ccf92d2] hover:transition-shadow px-4 py-2 rounded text-sm hover:font-medium"
           >
-            Live Link
-          </a>
-          <a
+            Live Demo
+          </Link>
+          <Link
+            to={`${github_link}`}
+            target="_blank"
             href="#"
-            className="bg-gray-600 hover:bg-gray-700 text-white px-4 py-2 rounded text-sm"
+            className="bg-black border-2 border-[#3CCF91] text-[#3CCF91] hover:text-black hover:bg-[#3ccf92d2] hover:transition-shadow px-4 py-2 rounded text-sm hover:font-medium"
           >
             Github
-          </a>
+          </Link>
         </div>
       </div>
     </div>
