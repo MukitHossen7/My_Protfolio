@@ -1,7 +1,7 @@
 const Footer = () => {
   const year = new Date().getFullYear();
   return (
-    <div className="bg-black  text-center py-6">
+    <div className="bg-[#030715]  text-center py-6">
       <p className="text-sm text-gray-300 pb-1">
         Designed and Developed by{" "}
         <span className="text-[#3CCF91]">Mukit Hossen</span>

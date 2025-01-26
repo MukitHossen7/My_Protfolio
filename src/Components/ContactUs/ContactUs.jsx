@@ -75,28 +75,28 @@ const ContactUs = () => {
         {/* Form */}
         <form
           onSubmit={onSubmit}
-          className="w-full lg:w-1/2 space-y-6 p-8 bg-black border border-gray-800 rounded-xl shadow-lg "
+          className="w-full lg:w-1/2 space-y-6 p-8 bg-black/20 border border-gray-800 rounded-xl shadow-lg "
         >
           <input
             type="text"
             name="name"
             required
             placeholder="Your Name"
-            className="w-full p-4 bg-black border border-gray-800 rounded-lg focus:outline-none focus:ring-1 focus:ring-[#3CCF91] placeholder-gray-400 text-white"
+            className="w-full p-4 bg-black/20 border border-gray-800 rounded-lg focus:outline-none focus:ring-1 focus:ring-[#3CCF91] placeholder-gray-400 text-white"
           />
           <input
             type="email"
             name="email"
             required
             placeholder="Your Email"
-            className="w-full p-4 bg-black border border-gray-800 rounded-lg focus:outline-none focus:ring-1 focus:ring-[#3CCF91] placeholder-gray-400 text-white"
+            className="w-full p-4 bg-black/20 border border-gray-800 rounded-lg focus:outline-none focus:ring-1 focus:ring-[#3CCF91] placeholder-gray-400 text-white"
           />
           <textarea
             placeholder="Your Message"
             name="message"
             required
             rows="5"
-            className="w-full p-4 bg-black border border-gray-800 rounded-lg focus:outline-none focus:ring-1 focus:ring-[#3CCF91] placeholder-gray-400 text-white"
+            className="w-full p-4 bg-black/20 border border-gray-800 rounded-lg focus:outline-none focus:ring-1 focus:ring-[#3CCF91] placeholder-gray-400 text-white"
           ></textarea>
           <button
             type="submit"
