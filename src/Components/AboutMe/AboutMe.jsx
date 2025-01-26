@@ -2,7 +2,7 @@ const AboutMe = () => {
   return (
     <div id="about" className="pt-24">
       <div className>
-        <div className="w-10/12 md:w-10/12 lg:w-10/12 xl:container mx-auto items-center justify-center grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-0">
+        <div className="w-11/12 md:w-11/12 lg:w-11/12 xl:container mx-auto items-center justify-center grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-0">
           <div className="">
             <h1 className="text-2xl font-bold text-gray-50">About Me</h1>
             <span className="block border-b-2 w-10 border-[#3CCF91]"></span>
@@ -29,11 +29,11 @@ const AboutMe = () => {
               collaborate on innovative projects that inspire and create value
             </p>
           </div>
-          <div className="flex justify-center ">
+          <div className="flex justify-center">
             <img
               src="https://i.ibb.co.com/z27nh0m/New-Project.png"
               alt="Profile"
-              className="rounded-full object-cover shadow-lg w-48 md:w-72 h-48 md:h-72 "
+              className="rounded-full object-cover shadow-lg w-80 h-80 ring-2 ring-[#3CCF91]"
             />
           </div>
         </div>

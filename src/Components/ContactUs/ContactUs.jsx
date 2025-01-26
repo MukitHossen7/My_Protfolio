@@ -26,12 +26,12 @@ const ContactUs = () => {
   return (
     <div
       id="Contacts"
-      className="mt-24 pb-20 w-10/12 md:w-10/12 lg:w-10/12 xl:container mx-auto"
+      className="mt-24 mb-20 w-11/12 md:w-11/12 lg:w-11/12 xl:container mx-auto"
     >
       {/* Heading */}
 
       {/* Form and Illustration */}
-      <div className="flex gap-10 flex-col md:flex-row lg:flex-row items-center justify-center overflow-hidden">
+      <div className="flex gap-10 flex-col lg:flex-row  items-center justify-center overflow-hidden">
         {/* Info*/}
         <div className="w-full lg:w-1/2">
           <div className="mb-3">

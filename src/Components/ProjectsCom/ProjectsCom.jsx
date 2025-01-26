@@ -12,7 +12,7 @@ const ProjectsCom = () => {
   return (
     <div
       id="Project"
-      className="bg-black w-10/12 md:w-10/12 lg:w-10/12 xl:container mx-auto min-h-screen pt-24"
+      className="bg-black w-11/12 md:w-11/12 lg:w-11/12 xl:container mx-auto min-h-screen pt-24"
     >
       <div className="mb-3 flex justify-center">
         <div className=" flex flex-col">
