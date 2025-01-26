@@ -1,6 +1,6 @@
+import toast from "react-hot-toast";
 import { CiLocationOn, CiMail } from "react-icons/ci";
 import { MdCall } from "react-icons/md";
-import { toast } from "react-toastify";
 
 const ContactUs = () => {
   const onSubmit = async (event) => {
@@ -8,7 +8,6 @@ const ContactUs = () => {
     const formData = new FormData(event.target);
 
     formData.append("access_key", import.meta.env.VITE_EMAIL_KEY);
-    console.log(import.meta.env.VITE_EMAIL_KEY);
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
       body: formData,
@@ -17,19 +16,11 @@ const ContactUs = () => {
     const data = await response.json();
 
     if (data.success) {
-      toast("🦄 Wow Mail sent Successfully", {
-        position: "top-right",
-        autoClose: 5000,
-        hideProgressBar: false,
-        closeOnClick: false,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        theme: "light",
-      });
+      toast.success("🦄 Wow Mail sent Successfully");
       event.target.reset();
     } else {
       console.log("Error", data);
+      toast.error("Failed to send mail");
     }
   };
   return (
