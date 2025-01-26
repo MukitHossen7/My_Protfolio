@@ -3,7 +3,10 @@ import { MdCall } from "react-icons/md";
 
 const ContactUs = () => {
   return (
-    <div className="mt-24 pb-20 w-10/12 md:w-10/12 lg:w-10/12 xl:container mx-auto">
+    <div
+      id="Contacts"
+      className="mt-24 pb-20 w-10/12 md:w-10/12 lg:w-10/12 xl:container mx-auto"
+    >
       {/* Heading */}
 
       {/* Form and Illustration */}

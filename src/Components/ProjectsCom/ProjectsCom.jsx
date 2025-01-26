@@ -10,7 +10,10 @@ const ProjectsCom = () => {
   }, []);
 
   return (
-    <div className="bg-black w-10/12 md:w-10/12 lg:w-10/12 xl:container mx-auto min-h-screen pt-24">
+    <div
+      id="Project"
+      className="bg-black w-10/12 md:w-10/12 lg:w-10/12 xl:container mx-auto min-h-screen pt-24"
+    >
       <div className="mb-3 flex justify-center">
         <div className=" flex flex-col">
           <h1 className="text-2xl font-bold text-gray-50">

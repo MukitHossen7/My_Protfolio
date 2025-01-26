@@ -3,7 +3,10 @@ import { CiSaveDown1 } from "react-icons/ci";
 import { Link } from "react-router-dom";
 const MyIdentity = () => {
   return (
-    <div className="w-10/12 md:w-10/12 lg:w-10/12 xl:container mx-auto pt-10">
+    <div
+      id="myIdentity"
+      className="w-10/12 md:w-10/12 lg:w-10/12 xl:container mx-auto pt-20"
+    >
       <p className="text-[#3CCF91] flex items-end text-3xl font-semibold pb-1">
         Hey there!, I&apos;m-
       </p>

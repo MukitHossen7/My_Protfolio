@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -10,15 +10,61 @@ const Navbar = () => {
         ></img>
 
         <ul className="hidden md:flex gap-10">
-          <NavLink to="/" className="">
+          <Link
+            to="#"
+            onClick={() =>
+              document
+                .getElementById("myIdentity")
+                .scrollIntoView({ behavior: "smooth" })
+            }
+            className=""
+          >
             Home
-          </NavLink>
-          <NavLink to="/projects" className="">
+          </Link>
+          <Link
+            to="#"
+            className=""
+            onClick={() =>
+              document
+                .getElementById("about")
+                .scrollIntoView({ behavior: "smooth" })
+            }
+          >
+            About
+          </Link>
+          <Link
+            to="#"
+            className=""
+            onClick={() =>
+              document
+                .getElementById("Skills")
+                .scrollIntoView({ behavior: "smooth" })
+            }
+          >
+            Skills
+          </Link>
+          <Link
+            to="#"
+            className=""
+            onClick={() =>
+              document
+                .getElementById("Project")
+                .scrollIntoView({ behavior: "smooth" })
+            }
+          >
             Projects
-          </NavLink>
-          <NavLink to="/contacts" className="">
+          </Link>
+          <Link
+            to="#"
+            className=""
+            onClick={() =>
+              document
+                .getElementById("Contacts")
+                .scrollIntoView({ behavior: "smooth" })
+            }
+          >
             Contact
-          </NavLink>
+          </Link>
         </ul>
 
         {/* Mobile Menu */}

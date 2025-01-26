@@ -7,7 +7,10 @@ import { VscVscode } from "react-icons/vsc";
 
 const Skills = () => {
   return (
-    <div className="w-10/12 md:w-10/12 lg:w-10/12 xl:container mx-auto  mt-24">
+    <div
+      id="Skills"
+      className="w-10/12 md:w-10/12 lg:w-10/12 xl:container mx-auto pt-24"
+    >
       <div className="mb-6 flex flex-col justify-center items-center">
         <h1 className="text-2xl font-bold text-gray-50 pb-1">My Skills</h1>
         <span className="block border-b-2 w-12 border-[#3CCF91]"></span>
