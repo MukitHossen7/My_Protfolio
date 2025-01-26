@@ -1,7 +1,37 @@
 import { CiLocationOn, CiMail } from "react-icons/ci";
 import { MdCall } from "react-icons/md";
+import { toast } from "react-toastify";
 
 const ContactUs = () => {
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", import.meta.env.VITE_EMAIL_KEY);
+    console.log(import.meta.env.VITE_EMAIL_KEY);
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData,
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      toast("🦄 Wow Mail sent Successfully", {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: false,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+      });
+      event.target.reset();
+    } else {
+      console.log("Error", data);
+    }
+  };
   return (
     <div
       id="Contacts"
@@ -52,19 +82,28 @@ const ContactUs = () => {
           </div>
         </div>
         {/* Form */}
-        <form className="w-full lg:w-1/2 space-y-6 p-8 bg-black border border-gray-800 rounded-xl shadow-lg ">
+        <form
+          onSubmit={onSubmit}
+          className="w-full lg:w-1/2 space-y-6 p-8 bg-black border border-gray-800 rounded-xl shadow-lg "
+        >
           <input
             type="text"
+            name="name"
+            required
             placeholder="Your Name"
             className="w-full p-4 bg-black border border-gray-800 rounded-lg focus:outline-none focus:ring-1 focus:ring-[#3CCF91] placeholder-gray-400 text-white"
           />
           <input
             type="email"
+            name="email"
+            required
             placeholder="Your Email"
             className="w-full p-4 bg-black border border-gray-800 rounded-lg focus:outline-none focus:ring-1 focus:ring-[#3CCF91] placeholder-gray-400 text-white"
           />
           <textarea
             placeholder="Your Message"
+            name="message"
+            required
             rows="5"
             className="w-full p-4 bg-black border border-gray-800 rounded-lg focus:outline-none focus:ring-1 focus:ring-[#3CCF91] placeholder-gray-400 text-white"
           ></textarea>
