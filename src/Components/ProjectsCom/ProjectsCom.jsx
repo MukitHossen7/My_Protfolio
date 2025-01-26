@@ -16,6 +16,7 @@ const ProjectsCom = () => {
           <h1 className="text-2xl font-bold text-gray-50">
             All Creative Works.
           </h1>
+          <span className="block border-b-2 w-20 border-[#3CCF91]"></span>
         </div>
       </div>
       <p className="text-gray-400 mb-8 text-center">
