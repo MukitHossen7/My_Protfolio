@@ -7,7 +7,7 @@ const ContactUs = () => {
     event.preventDefault();
     const formData = new FormData(event.target);
 
-    formData.append("access_key", import.meta.env.VITE_EMAIL_KEY);
+    formData.append("access_key", "07e7c3eb-9ada-4328-b749-95500ea1045c");
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
       body: formData,
