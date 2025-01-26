@@ -13,7 +13,7 @@ const MyIdentity = () => {
       <h1 className="text-4xl md:text-6xl lg:text-8xl font-extrabold tracking-wide">
         <span className="text-gray-50">Mukit Hossen</span>
       </h1>
-      <h3 className="text-gray-500 text-xl md:text-2xl lg:text-3xl font-semibold pt-5">
+      <h3 className="text-gray-400 text-xl md:text-2xl lg:text-3xl font-semibold pt-5">
         I am a <span className="text-gray-50">Front-End React</span> Developer{" "}
       </h3>
       <p className="text-gray-400 w-full lg:max-w-3xl text-base lg:text-lg pt-5">

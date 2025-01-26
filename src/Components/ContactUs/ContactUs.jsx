@@ -26,7 +26,7 @@ const ContactUs = () => {
   return (
     <div
       id="Contacts"
-      className="mt-24 mb-20 w-11/12 md:w-11/12 lg:w-11/12 xl:container mx-auto"
+      className="mt-24 w-11/12 md:w-11/12 lg:w-11/12 xl:container mx-auto"
     >
       {/* Heading */}
 
@@ -75,28 +75,28 @@ const ContactUs = () => {
         {/* Form */}
         <form
           onSubmit={onSubmit}
-          className="w-full lg:w-1/2 space-y-6 p-8 bg-black/20 border border-gray-800 rounded-xl shadow-lg "
+          className="w-full lg:w-1/2 space-y-6 p-8 bg-[#030712] border border-gray-800 rounded-xl shadow-lg "
         >
           <input
             type="text"
             name="name"
             required
             placeholder="Your Name"
-            className="w-full p-4 bg-black/20 border border-gray-800 rounded-lg focus:outline-none focus:ring-1 focus:ring-[#3CCF91] placeholder-gray-400 text-white"
+            className="w-full p-4 bg-[#030712] border border-gray-800 rounded-lg focus:outline-none focus:ring-1 focus:ring-[#3CCF91] placeholder-gray-400 text-white"
           />
           <input
             type="email"
             name="email"
             required
             placeholder="Your Email"
-            className="w-full p-4 bg-black/20 border border-gray-800 rounded-lg focus:outline-none focus:ring-1 focus:ring-[#3CCF91] placeholder-gray-400 text-white"
+            className="w-full p-4 bg-[#030712] border border-gray-800 rounded-lg focus:outline-none focus:ring-1 focus:ring-[#3CCF91] placeholder-gray-400 text-white"
           />
           <textarea
             placeholder="Your Message"
             name="message"
             required
             rows="5"
-            className="w-full p-4 bg-black/20 border border-gray-800 rounded-lg focus:outline-none focus:ring-1 focus:ring-[#3CCF91] placeholder-gray-400 text-white"
+            className="w-full p-4 bg-[#030712] border border-gray-800 rounded-lg focus:outline-none focus:ring-1 focus:ring-[#3CCF91] placeholder-gray-400 text-white"
           ></textarea>
           <button
             type="submit"
