@@ -31,7 +31,7 @@ const AboutMe = () => {
           </div>
           <div className="flex justify-center">
             <img
-              src="https://i.ibb.co.com/z27nh0m/New-Project.png"
+              src="https://i.ibb.co.com/Bg6r18V/New-Project-1.png"
               alt="Profile"
               className="rounded-full object-cover shadow-lg w-80 h-80 ring-2 ring-[#3CCF91]"
             />
