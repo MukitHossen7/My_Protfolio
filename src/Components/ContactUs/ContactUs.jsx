@@ -26,7 +26,7 @@ const ContactUs = () => {
   return (
     <div
       id="Contacts"
-      className="mt-24 w-11/12 md:w-11/12 lg:w-11/12 xl:container mx-auto"
+      className="w-11/12 md:w-11/12 lg:w-11/12 xl:container mx-auto pt-24 pb-20"
     >
       {/* Heading */}
 

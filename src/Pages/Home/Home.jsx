@@ -7,13 +7,11 @@ import Skills from "../../Components/Skills/Skills";
 const Home = () => {
   return (
     <div>
-      <div>
-        <MyIdentity></MyIdentity>
-        <AboutMe></AboutMe>
-        <Skills></Skills>
-        <ProjectsCom></ProjectsCom>
-        <ContactUs></ContactUs>
-      </div>
+      <MyIdentity></MyIdentity>
+      <AboutMe></AboutMe>
+      <Skills></Skills>
+      <ProjectsCom></ProjectsCom>
+      <ContactUs></ContactUs>
     </div>
   );
 };
