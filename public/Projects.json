@@ -4,16 +4,7 @@
     "name": "Food Sharing",
     "image": "https://i.ibb.co.com/ggxmKWF/Screenshot-2025-01-25-235937.png",
     "description": "This platform aims to reduce food waste by connecting donors with those in need, serving as a bridge for sharing surplus food in the community.",
-    "features": [
-      "React.js",
-      "Tailwind",
-      "Node.js",
-      "Express.js",
-      "MongoDB",
-      "Firebase",
-      "JWT",
-      "TanStack Query"
-    ],
+    "features": ["React.js", "Node.js", "Express.js", "MongoDB"],
     "live_link": "https://food-sharing-bddd1.web.app",
     "github_link": "https://github.com/MukitHossen7/B10A11-Food-Sharing-Website"
   },
@@ -22,24 +13,17 @@
     "name": "Movie Portal",
     "image": "https://i.ibb.co.com/McWfFwg/Screenshot-2025-01-25-235614.png",
     "description": "The Movie Portal is a user-friendly platform for exploring, adding, and managing movies, offering robust features and a responsive design for movie enthusiasts.",
-    "features": [
-      "React.js",
-      "Tailwind",
-      "Node.js",
-      "Express.js",
-      "MongoDB",
-      "Firebase",
-      "JWT",
-      "React Router"
-    ],
+    "features": ["React.js", "Node.js", "Express.js", "MongoDB"],
     "live_link": "https://movie-portal-f63b6.web.app/",
     "github_link": "https://github.com/MukitHossen7/B10A10-Movie-Protal"
   },
   {
     "_id": "3",
-    "name": "Unknown Project",
-    "image": "https://raw.githubusercontent.com/muhammadranju/Batch10-Assignment-9/main/public/screenshot/home.jpeg",
-    "description": "A full-stack single-page car repair web app where people can take and book services. Login system with Firebase and private routes.",
-    "features": ["React.js", "React Bootstrap", "Node.js", "Express.js"]
+    "name": "Hostel Management",
+    "image": "https://i.ibb.co.com/DDmJ66cC/Screenshot-2025-02-01-194845.png",
+    "description": "The Hostel Management System is a MERN stack-based web application designed to streamline hostel meal management for students.",
+    "features": ["React.js", "Node.js", "Express.js", "MongoDB"],
+    "live_link": "https://b10a12-final-project-ffb43.web.app/",
+    "github_link": "https://github.com/MukitHossen7/B10A12-Hostel-Managementt"
   }
 ]
