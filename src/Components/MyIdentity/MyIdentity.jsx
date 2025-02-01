@@ -34,7 +34,7 @@ const MyIdentity = () => {
         </Link>
 
         <Link
-          to="https://github.com/MukitHossen7"
+          to="www.linkedin.com/in/mukithossen"
           target="_blank"
           className="flex gap-2 px-3 py-2 bg-[#292929] rounded-md"
         >
