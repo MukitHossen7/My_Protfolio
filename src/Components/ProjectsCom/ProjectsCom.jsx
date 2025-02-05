@@ -16,7 +16,7 @@ const ProjectsCom = () => {
       className="w-11/12 md:w-11/12 lg:w-11/12 xl:container mx-auto pt-24"
     >
       <motion.div
-        variants={fadeIn("left", 0.4)}
+        variants={fadeIn("left", 0.2)}
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: false, amount: 0.8 }}
