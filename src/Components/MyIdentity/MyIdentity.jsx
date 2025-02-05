@@ -1,6 +1,7 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { CiSaveDown1 } from "react-icons/ci";
 import { Link } from "react-router-dom";
+import { MdDownload } from "react-icons/md";
+import resume from "../../assets/Resume.pdf";
 const MyIdentity = () => {
   return (
     <div
@@ -31,20 +32,23 @@ const MyIdentity = () => {
         >
           <FaGithub className="text-gray-300 text-3xl" />
         </Link>
-
         <Link
-          to="www.linkedin.com/in/mukithossen"
+          to="https://www.linkedin.com/in/mukithossen"
           target="_blank"
           className="flex gap-2"
         >
           <FaLinkedin className="text-gray-300 text-3xl" />
         </Link>
-        <Link className="flex flex-row gap-2 px-3 py-2 bg-[#292929] rounded-md">
-          <CiSaveDown1 className="text-[#3CCF91] text-lg font-bold" />
-          <span className="text-gray-50 text-sm font-medium">
-            Download Resume
-          </span>
-        </Link>
+        <button>
+          <a
+            className="flex flex-row gap-2 px-3 py-2 rounded-md border border-[#3CCF91]"
+            href={resume}
+            download="resume"
+          >
+            <MdDownload className="text-xl text-gray-300" />
+            <span className="text-gray-50 text-sm font-medium">Resume</span>
+          </a>
+        </button>
       </div>
     </div>
   );

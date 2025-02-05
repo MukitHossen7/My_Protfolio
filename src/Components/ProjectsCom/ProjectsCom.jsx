@@ -16,7 +16,7 @@ const ProjectsCom = () => {
       className="w-11/12 md:w-11/12 lg:w-11/12 xl:container mx-auto pt-24"
     >
       <motion.div
-        variants={fadeIn("left", 0.2)}
+        variants={fadeIn("bottom", 0.2)}
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: false, amount: 0.8 }}
@@ -33,7 +33,7 @@ const ProjectsCom = () => {
           Here’s some of my projects that I have worked on.
         </p>
       </motion.div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 ">
         {projects?.map((project, index) => (
           <Cards key={index} project={project}></Cards>
         ))}
