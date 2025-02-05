@@ -1,6 +1,7 @@
 import "react-awesome-button/dist/styles.css";
 import { FaGithub } from "react-icons/fa";
 import { FiExternalLink } from "react-icons/fi";
+import { RiDashboardFill } from "react-icons/ri";
 import { Link } from "react-router-dom";
 // bg-[#080808]
 // bg-[#292929]
@@ -25,7 +26,7 @@ const Cards = ({ project }) => {
           <h3 className="text-lg font-semibold mt-3  pb-3 text-gray-100">
             {name}
           </h3>
-          <p className="text-sm text-gray-400 pb-5">
+          <p className="text-sm text-gray-400 pb-4">
             {description.slice(0, 90)} ....
           </p>
           <div className="flex flex-wrap gap-2 ">
@@ -41,7 +42,7 @@ const Cards = ({ project }) => {
         </div>
 
         {/* Buttons */}
-        <div className="flex flex-row gap-2 mt-7">
+        <div className="flex flex-row gap-2 mt-6">
           <Link
             to={`${live_link}`}
             target="_blank"
@@ -61,10 +62,9 @@ const Cards = ({ project }) => {
           </Link>
           <Link
             to="/details/1"
-            target="_blank"
-            href="#"
             className="bg-black border border-[#3CCF91] flex text-gray-200 px-2 py-2 rounded text-sm items-center gap-1"
           >
+            <RiDashboardFill className="text-xl" />
             Details
           </Link>
         </div>

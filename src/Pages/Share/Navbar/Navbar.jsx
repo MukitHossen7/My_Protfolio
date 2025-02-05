@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 // bg-[#020617]
 const Navbar = () => {
@@ -16,10 +17,12 @@ const Navbar = () => {
   return (
     <div className="bg-[#030712] backdrop-blur-lg border-b border-b-gray-700/20 bg-opacity-30 text-gray-100 pt-5 pb-4 sticky top-0 z-50">
       <div className="flex justify-between items-center  w-11/12 md:w-11/12 lg:w-11/12 xl:container mx-auto">
-        <img
-          src="/logo.png"
-          className="w-8 md:w-10 h-8 md:h-10 bg-slate-100 p-1 rounded-lg"
-        ></img>
+        <Link to="/">
+          <img
+            src="/logo.png"
+            className="w-8 md:w-10 h-8 md:h-10 bg-slate-100 p-1 rounded-lg"
+          ></img>
+        </Link>
         <ul className="hidden md:flex gap-10">
           <li>
             <button

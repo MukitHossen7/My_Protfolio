@@ -1,27 +1,27 @@
 [
   {
-    "_id": "1",
+    "_id": 1,
     "name": "Food Sharing",
     "image": "https://i.ibb.co.com/ggxmKWF/Screenshot-2025-01-25-235937.png",
-    "description": "This platform aims to reduce food waste by connecting donors with those in need, serving as a bridge for sharing surplus food in the community.",
+    "description": "Food Sharing is a community-driven platform designed to reduce food waste by connecting food donors with those in need. It facilitates seamless food sharing, ensuring surplus food reaches the right people efficiently.",
     "features": ["React.js", "Node.js", "Express.js", "MongoDB"],
     "live_link": "https://food-sharing-bddd1.web.app",
     "github_link": "https://github.com/MukitHossen7/B10A11-Food-Sharing-Website"
   },
   {
-    "_id": "2",
+    "_id": 2,
     "name": "Movie Portal",
     "image": "https://i.ibb.co.com/McWfFwg/Screenshot-2025-01-25-235614.png",
-    "description": "The Movie Portal is a user-friendly platform for exploring, adding, and managing movies, offering robust features and a responsive design for movie enthusiasts.",
+    "description": "Movie Portal is a dynamic and user-friendly platform that streamlines movie exploration, addition, and management. Designed for movie enthusiasts, it offers a seamless experience with a clean, responsive interface and robust features",
     "features": ["React.js", "Node.js", "Express.js", "MongoDB"],
     "live_link": "https://movie-portal-f63b6.web.app/",
     "github_link": "https://github.com/MukitHossen7/B10A10-Movie-Protal"
   },
   {
-    "_id": "3",
+    "_id": 3,
     "name": "Hostel Management",
     "image": "https://i.ibb.co.com/DDmJ66cC/Screenshot-2025-02-01-194845.png",
-    "description": "The Hostel Management System is a MERN stack-based web application designed to streamline hostel meal management for students.",
+    "description": "Hostel Management is a MERN stack-based web application that simplifies hostel meal management. It allows administrators to manage students, meals, and reviews efficiently while providing students with an intuitive platform to log in, view meal options, and request meals seamlessly.",
     "features": ["React.js", "Node.js", "Express.js", "MongoDB"],
     "live_link": "https://b10a12-final-project-ffb43.web.app/",
     "github_link": "https://github.com/MukitHossen7/B10A12-Hostel-Managementt"
