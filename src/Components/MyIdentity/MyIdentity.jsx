@@ -1,7 +1,7 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { MdDownload } from "react-icons/md";
-import resume from "../../assets/Resume.pdf";
+import resume from "/public/My Resume_2.pdf";
 const MyIdentity = () => {
   return (
     <div
@@ -43,7 +43,7 @@ const MyIdentity = () => {
           <a
             className="flex flex-row gap-2 px-3 py-2 rounded-md border border-[#3CCF91]"
             href={resume}
-            download="resume"
+            download="resume.pdf"
           >
             <MdDownload className="text-xl text-gray-300" />
             <span className="text-gray-50 text-sm font-medium">Resume</span>

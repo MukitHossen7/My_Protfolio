@@ -1,4 +1,6 @@
 import "react-awesome-button/dist/styles.css";
+import { FaGithub } from "react-icons/fa";
+import { FiExternalLink } from "react-icons/fi";
 import { Link } from "react-router-dom";
 // bg-[#080808]
 // bg-[#292929]
@@ -23,7 +25,9 @@ const Cards = ({ project }) => {
           <h3 className="text-lg font-semibold mt-3  pb-3 text-gray-100">
             {name}
           </h3>
-          <p className="text-sm text-gray-400 pb-5">{description}</p>
+          <p className="text-sm text-gray-400 pb-5">
+            {description.slice(0, 90)} ....
+          </p>
           <div className="flex flex-wrap gap-2 ">
             {features.map((feature, index) => (
               <span
@@ -41,17 +45,27 @@ const Cards = ({ project }) => {
           <Link
             to={`${live_link}`}
             target="_blank"
-            className="bg-black border border-[#3CCF91] text-gray-200 px-4 py-2 rounded text-sm "
+            className="bg-black border border-[#3CCF91] text-gray-200 px-2 py-2 rounded text-sm flex items-center gap-1"
           >
-            Live Demo
+            <FiExternalLink className="text-xl" />
+            Live
           </Link>
           <Link
             to={`${github_link}`}
             target="_blank"
             href="#"
-            className="bg-black border border-[#3CCF91] text-gray-200 px-4 py-2 rounded text-sm "
+            className="bg-black border border-[#3CCF91] flex text-gray-200 px-2 py-2 rounded text-sm items-center gap-1"
           >
+            <FaGithub className="text-xl" />
             Github
+          </Link>
+          <Link
+            to="/details/1"
+            target="_blank"
+            href="#"
+            className="bg-black border border-[#3CCF91] flex text-gray-200 px-2 py-2 rounded text-sm items-center gap-1"
+          >
+            Details
           </Link>
         </div>
       </div>
