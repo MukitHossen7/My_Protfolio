@@ -14,12 +14,12 @@ const MyIdentity = () => {
         <span className="text-gray-50">Mukit Hossen</span>
       </h1>
       <h3 className="text-gray-400 text-xl md:text-2xl lg:text-3xl font-semibold pt-5">
-        I am a <span className="text-gray-50">Frontend React</span> Developer{" "}
+        I am a <span className="text-gray-50">Front-End</span> Developer{" "}
       </h3>
       <p className="text-gray-400 w-full lg:max-w-3xl text-base lg:text-lg pt-5">
         I am a passionate{" "}
-        <span className="text-[#3CCF91]">Junior React Developer</span> with a
-        growing skill set in building dynamic and responsive web applications.
+        <span className="text-[#3CCF91]">Junior Front-End Developer</span> with
+        a growing skill set in building dynamic and responsive web applications.
         With a strong foundation in JavaScript and React, I aim to create
         user-friendly and efficient solutions.
       </p>
@@ -27,19 +27,17 @@ const MyIdentity = () => {
         <Link
           to="https://github.com/MukitHossen7"
           target="_blank"
-          className="flex gap-2 px-3 py-2 bg-[#292929] rounded-md"
+          className="flex gap-2"
         >
-          <FaGithub className="text-[#3CCF91] text-lg" />
-          <span className="text-gray-50 text-sm font-medium">GitHub</span>
+          <FaGithub className="text-gray-300 text-3xl" />
         </Link>
 
         <Link
           to="www.linkedin.com/in/mukithossen"
           target="_blank"
-          className="flex gap-2 px-3 py-2 bg-[#292929] rounded-md"
+          className="flex gap-2"
         >
-          <FaLinkedin className="text-[#3CCF91] text-lg" />
-          <span className="text-gray-50 text-sm font-medium">LinkedIn</span>
+          <FaLinkedin className="text-gray-300 text-3xl" />
         </Link>
         <Link className="flex flex-row gap-2 px-3 py-2 bg-[#292929] rounded-md">
           <CiSaveDown1 className="text-[#3CCF91] text-lg font-bold" />
