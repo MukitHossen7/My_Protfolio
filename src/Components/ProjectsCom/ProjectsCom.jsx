@@ -9,7 +9,6 @@ const ProjectsCom = () => {
       .then((res) => res.json())
       .then((data) => setProjects(data));
   }, []);
-
   return (
     <div
       id="Project"

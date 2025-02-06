@@ -2,7 +2,7 @@
   {
     "_id": 1,
     "name": "Food Sharing",
-    "image": "https://i.ibb.co.com/ggxmKWF/Screenshot-2025-01-25-235937.png",
+    "image": "https://i.ibb.co.com/WW0LWfT7/Screenshot-2025-02-06-094704.png",
     "description": "Food Sharing is a community-driven platform designed to reduce food waste by connecting food donors with those in need. It facilitates seamless food sharing, ensuring surplus food reaches the right people efficiently.",
     "features": ["React.js", "Node.js", "Express.js", "MongoDB"],
     "live_link": "https://food-sharing-bddd1.web.app",
@@ -11,7 +11,7 @@
   {
     "_id": 2,
     "name": "Movie Portal",
-    "image": "https://i.ibb.co.com/McWfFwg/Screenshot-2025-01-25-235614.png",
+    "image": "https://i.ibb.co.com/7J0Gj5yb/Screenshot-2025-02-06-095343.png",
     "description": "Movie Portal is a dynamic and user-friendly platform that streamlines movie exploration, addition, and management. Designed for movie enthusiasts, it offers a seamless experience with a clean, responsive interface and robust features",
     "features": ["React.js", "Node.js", "Express.js", "MongoDB"],
     "live_link": "https://movie-portal-f63b6.web.app/",
@@ -20,7 +20,7 @@
   {
     "_id": 3,
     "name": "Hostel Management",
-    "image": "https://i.ibb.co.com/DDmJ66cC/Screenshot-2025-02-01-194845.png",
+    "image": "https://i.ibb.co.com/H9NgVvX/Screenshot-2025-02-01-194845.png",
     "description": "Hostel Management is a MERN stack-based web application that simplifies hostel meal management. It allows administrators to manage students, meals, and reviews efficiently while providing students with an intuitive platform to log in, view meal options, and request meals seamlessly.",
     "features": ["React.js", "Node.js", "Express.js", "MongoDB"],
     "live_link": "https://b10a12-final-project-ffb43.web.app/",

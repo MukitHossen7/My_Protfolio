@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 // bg-[#292929]
 // eslint-disable-next-line react/prop-types
 const Cards = ({ project }) => {
-  const { name, image, description, features, live_link, github_link } =
+  const { name, image, description, features, live_link, github_link, _id } =
     project || {};
   return (
     <div className="w-full bg-black/20 rounded-xl shadow-md overflow-hidden flex flex-col border border-gray-800">
@@ -61,7 +61,7 @@ const Cards = ({ project }) => {
             Github
           </Link>
           <Link
-            to="/details/1"
+            to={`/details/${_id}`}
             className="bg-black border border-[#3CCF91] flex text-gray-200 px-2 py-2 rounded text-sm items-center gap-1"
           >
             <RiDashboardFill className="text-xl" />
