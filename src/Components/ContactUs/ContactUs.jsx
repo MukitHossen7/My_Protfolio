@@ -40,9 +40,10 @@ const ContactUs = () => {
             </h1>
             <span className="block border-b-2 w-14 border-[#3CCF91]"></span>
           </div>
-          <p className="text-gray-400 mb-8 mx-auto">
-            Have a question or feedback? Drop me a message, and I&apos;ll reply
-            promptly
+          <p className="text-gray-400 mb-8 max-w-lg">
+            I&apos;d be happy to connect! Feel free to reach out for project
+            inquiries, collaboration opportunities, or any other questions you
+            may have.
           </p>
           <div className="flex flex-col gap-3">
             {/* Email */}
@@ -75,29 +76,38 @@ const ContactUs = () => {
         {/* Form */}
         <form
           onSubmit={onSubmit}
-          className="w-full lg:w-1/2 space-y-6 p-8 bg-[#030712] border border-gray-800 rounded-xl shadow-lg "
+          className="w-full lg:w-1/2 space-y-6 p-8 bg-[#030712] rounded-xl shadow-lg "
         >
-          <input
-            type="text"
-            name="name"
-            required
-            placeholder="Your Name"
-            className="w-full p-4 bg-[#030712] border border-gray-800 rounded-lg focus:outline-none focus:ring-1 focus:ring-[#3CCF91] placeholder-gray-400 text-white"
-          />
-          <input
-            type="email"
-            name="email"
-            required
-            placeholder="Your Email"
-            className="w-full p-4 bg-[#030712] border border-gray-800 rounded-lg focus:outline-none focus:ring-1 focus:ring-[#3CCF91] placeholder-gray-400 text-white"
-          />
-          <textarea
-            placeholder="Your Message"
-            name="message"
-            required
-            rows="5"
-            className="w-full p-4 bg-[#030712] border border-gray-800 rounded-lg focus:outline-none focus:ring-1 focus:ring-[#3CCF91] placeholder-gray-400 text-white"
-          ></textarea>
+          <div className="flex flex-col space-y-3">
+            <label className="font-semibold text-gray-400">Name</label>
+            <input
+              type="text"
+              name="name"
+              required
+              placeholder="Your Name"
+              className="w-full p-4 bg-[#070D1E] rounded-lg focus:outline-none focus:ring-1 focus:ring-[#3CCF91] placeholder-gray-400 text-white"
+            />
+          </div>
+          <div className="flex flex-col space-y-3">
+            <label className="font-semibold text-gray-400">Email</label>
+            <input
+              type="email"
+              name="email"
+              required
+              placeholder="Your Email"
+              className="w-full p-4 bg-[#070D1E]  rounded-lg focus:outline-none focus:ring-1 focus:ring-[#3CCF91] placeholder-gray-400 text-white"
+            />
+          </div>
+          <div className="flex flex-col space-y-3">
+            <label className="font-semibold text-gray-400">Message</label>
+            <textarea
+              placeholder="Your Message"
+              name="message"
+              required
+              rows="4"
+              className="w-full p-4 bg-[#070D1E] rounded-lg focus:outline-none focus:ring-1 focus:ring-[#3CCF91] placeholder-gray-400 text-white"
+            ></textarea>
+          </div>
           <button
             type="submit"
             className="w-full border-2 border-[#3CCF91] text-[#3CCF91]  py-3 rounded-md mt-6 font-semibold transition-all duration-300"

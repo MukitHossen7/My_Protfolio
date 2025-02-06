@@ -10,7 +10,7 @@ const Cards = ({ project }) => {
   const { name, image, description, features, live_link, github_link, _id } =
     project || {};
   return (
-    <div className="w-full bg-black/20 rounded-xl shadow-md overflow-hidden flex flex-col border border-gray-800">
+    <div className="w-full bg-[#070D1E] rounded-xl shadow-2xl overflow-hidden flex flex-col border border-gray-800">
       {/* Image Section */}
       <div className="">
         <img

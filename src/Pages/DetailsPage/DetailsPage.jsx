@@ -12,7 +12,7 @@ const DetailsPage = () => {
   const project = projects.find((project) => project._id === parseInt(id));
   console.log(project);
   return (
-    <div className="w-11/12 md:w-11/12 lg:11/12 mx-auto p-7 bg-gray-900 text-white  rounded-lg my-10">
+    <div className="w-11/12 md:w-11/12 lg:11/12 mx-auto p-7 bg-[#070D1E] text-white  rounded-lg my-10">
       <img
         src={project?.image}
         alt={project?.name}
