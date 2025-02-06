@@ -3,7 +3,6 @@ import { useParams } from "react-router-dom";
 
 const DetailsPage = () => {
   const { id } = useParams();
-
   const [projects, setProjects] = useState([]);
   useEffect(() => {
     fetch("/public/Projects.json")
@@ -12,48 +11,41 @@ const DetailsPage = () => {
   }, []);
   const project = projects.find((project) => project._id === parseInt(id));
   console.log(project);
-  // const project = {
-  //   _id: "2",
-  //   name: "Movie Portal",
-  //   image: "https://i.ibb.co.com/McWfFwg/Screenshot-2025-01-25-235614.png",
-  //   description:
-  //     "Movie Portal is a dynamic and user-friendly platform that streamlines movie exploration, addition, and management. Designed for movie enthusiasts, it offers a seamless experience with a clean, responsive interface and robust features",
-  //   features: ["React.js", "Node.js", "Express.js", "MongoDB"],
-  //   live_link: "https://movie-portal-f63b6.web.app/",
-  //   github_link: "https://github.com/MukitHossen7/B10A10-Movie-Protal",
-  // };
   return (
-    <div className="w-10/12 mx-auto p-4 bg-gray-900 text-white  rounded-lg mt-10">
+    <div className="w-10/12 mx-auto p-7 bg-gray-900 text-white  rounded-lg mt-10">
       <img
         src={project?.image}
         alt={project?.name}
         className="w-full h-full object-cover rounded-lg"
       />
-      <h1 className="text-2xl font-bold mt-4">{project?.name}</h1>
-      <p className="text-gray-300 mt-2">{project?.description}</p>
-      <h2 className="text-xl font-semibold mt-4">Features:</h2>
-      <ul className="list-disc list-inside text-gray-400">
-        {project?.features?.map((feature, index) => (
-          <li key={index}>{feature}</li>
+      <h1 className="text-3xl font-bold mt-4 text-gray-100">{project?.name}</h1>
+      <p className="text-gray-200 mt-2 font-medium">{project?.description}</p>
+      <h2 className="text-xl font-semibold mt-4 text-gray-100">Technology</h2>
+      <div className="flex flex-wrap gap-2 text-gray-400 mt-3">
+        {project?.all_features?.map((feature, index) => (
+          <p
+            key={index}
+            className="px-2 py-1 border border-gray-500 rounded-full text-sm text-gray-200"
+          >
+            {feature}
+          </p>
         ))}
-      </ul>
-      <div className="mt-4 flex gap-4">
-        <a
-          href={project?.live_link}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
-        >
-          Live Site
-        </a>
-        <a
-          href={project?.github_link}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="bg-gray-700 text-white px-4 py-2 rounded hover:bg-gray-800"
-        >
-          GitHub Repo
-        </a>
+      </div>
+      <div className="mt-4 flex flex-col gap-3">
+        <h3 className="text-xl font-semibold text-gray-100">
+          Project Improvements
+        </h3>
+        {project?.project_improvements?.length === 0 ? (
+          <p className="text-gray-300 font-medium text-lg text-center">
+            I have no idea now.
+          </p>
+        ) : (
+          <ul className="list-disc list-inside text-gray-300 text-sm">
+            {project?.project_improvements?.map((improvement, index) => (
+              <li key={index}>{improvement}</li>
+            ))}
+          </ul>
+        )}
       </div>
     </div>
   );

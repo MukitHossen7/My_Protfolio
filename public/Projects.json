@@ -4,7 +4,18 @@
     "name": "Food Sharing",
     "image": "https://i.ibb.co.com/WW0LWfT7/Screenshot-2025-02-06-094704.png",
     "description": "Food Sharing is a community-driven platform designed to reduce food waste by connecting food donors with those in need. It facilitates seamless food sharing, ensuring surplus food reaches the right people efficiently.",
-    "features": ["React.js", "Node.js", "Express.js", "MongoDB"],
+    "features": ["Firebase", "React.js", "Tailwind CSS", "MongoDB"],
+    "all_features": [
+      "React.js",
+      "Tailwind CSS",
+      "React Router DOM",
+      "Axios",
+      "Firebase",
+      "Node.js",
+      "Express.js",
+      "MongoDB"
+    ],
+    "project_improvements": [],
     "live_link": "https://food-sharing-bddd1.web.app",
     "github_link": "https://github.com/MukitHossen7/B10A11-Food-Sharing-Website"
   },
@@ -12,8 +23,20 @@
     "_id": 2,
     "name": "Movie Portal",
     "image": "https://i.ibb.co.com/7J0Gj5yb/Screenshot-2025-02-06-095343.png",
-    "description": "Movie Portal is a dynamic and user-friendly platform that streamlines movie exploration, addition, and management. Designed for movie enthusiasts, it offers a seamless experience with a clean, responsive interface and robust features",
-    "features": ["React.js", "Node.js", "Express.js", "MongoDB"],
+    "description": "Movie Portal is a dynamic and user-friendly platform that streamlines movie exploration, addition, and management. Designed for movie enthusiasts, it offers a seamless experience with a clean, responsive interface and robust features.",
+    "features": ["React.js", "Firebase", "Tailwind CSS", "DaisyUi"],
+    "all_features": [
+      "React.js",
+      "Tailwind CSS",
+      "React Router DOM",
+      "DaisyUi",
+      "Firebase",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "React Hook Form"
+    ],
+    "project_improvements": [],
     "live_link": "https://movie-portal-f63b6.web.app/",
     "github_link": "https://github.com/MukitHossen7/B10A10-Movie-Protal"
   },
@@ -23,6 +46,25 @@
     "image": "https://i.ibb.co.com/H9NgVvX/Screenshot-2025-02-01-194845.png",
     "description": "Hostel Management is a MERN stack-based web application that simplifies hostel meal management. It allows administrators to manage students, meals, and reviews efficiently while providing students with an intuitive platform to log in, view meal options, and request meals seamlessly.",
     "features": ["React.js", "Node.js", "Express.js", "MongoDB"],
+    "all_features": [
+      "React.js",
+      "Tailwind CSS",
+      "React Router",
+      "React Hook Form",
+      "Firebase",
+      "Express.js",
+      "MongoDB",
+      "JWT",
+      "Stripe"
+    ],
+    "project_improvements": [
+      "Implement dark mode for better user experience.",
+      "Add loading spinners and scaling animations to improve responsiveness.",
+      "Improve table and dashboard design for better interaction.",
+      "Implement JWT refresh tokens for secure authentication.",
+      "Enable email, SMS, and in-app notifications for updates.",
+      "Add real-time meal status updates for students."
+    ],
     "live_link": "https://b10a12-final-project-ffb43.web.app/",
     "github_link": "https://github.com/MukitHossen7/B10A12-Hostel-Managementt"
   }
