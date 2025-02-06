@@ -1,11 +1,52 @@
-import { BiLogoTypescript } from "react-icons/bi";
-import { DiHtml5 } from "react-icons/di";
-import { FaCss3Alt, FaFigma, FaGitAlt, FaNode, FaReact } from "react-icons/fa";
-import { RiJavascriptFill, RiNextjsFill } from "react-icons/ri";
-import { SiExpress, SiMongodb, SiTailwindcss } from "react-icons/si";
-import { VscVscode } from "react-icons/vsc";
-
 const Skills = () => {
+  const mySkills = [
+    {
+      image:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
+      name: "HTML5",
+    },
+    {
+      image:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
+      name: "CSS3",
+    },
+    {
+      image:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
+      name: "Javascript",
+    },
+    {
+      image:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+      name: "TailwindCSS",
+    },
+    {
+      image:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+      name: "React",
+    },
+    {
+      image:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
+      name: "Next.js",
+    },
+    {
+      image:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg",
+      name: "git",
+    },
+    {
+      image:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
+      name: "Node.js",
+    },
+    {
+      image:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg",
+      name: "Mongodb",
+    },
+  ];
+  console.log(mySkills);
   return (
     <div
       id="Skills"
@@ -18,59 +59,22 @@ const Skills = () => {
 
       {/* Skills Grid */}
 
-      <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-14">
-        <div className="text-center flex flex-col items-center ">
-          <DiHtml5 className="text-5xl text-[#3CCF91]" />
-          <p className="text-gray-300  mt-3 text-sm">HTML5</p>
-        </div>
-        <div className="text-center flex flex-col items-center">
-          <FaCss3Alt className="text-5xl text-[#3CCF91]" />
-          <p className="text-gray-300  mt-3 text-sm">CSS3</p>
-        </div>
-        <div className="text-center flex flex-col items-center">
-          <SiTailwindcss className="text-5xl text-[#3CCF91]" />
-          <p className="text-gray-300  mt-3 text-sm">Tailwind</p>
-        </div>
-        <div className="text-center flex flex-col items-center">
-          <RiJavascriptFill className="text-5xl text-[#3CCF91]" />
-          <p className="text-gray-300  mt-3 text-sm">JavaScript</p>
-        </div>
-        <div className="text-center flex flex-col items-center">
-          <FaReact className="text-5xl text-[#3CCF91]" />
-          <p className="text-gray-300  mt-3 text-sm">React</p>
-        </div>
-        <div className="text-center flex flex-col items-center">
-          <RiNextjsFill className="text-5xl text-[#3CCF91]" />
-          <p className="text-gray-300  mt-3 text-sm">Nextjs</p>
-        </div>
-        <div className="text-center flex flex-col items-center">
-          <FaNode className="text-5xl text-[#3CCF91]" />
-          <p className="text-gray-300  mt-3 text-sm">Node.js</p>
-        </div>
-        <div className="text-center flex flex-col items-center">
-          <SiExpress className="text-5xl text-[#3CCF91]" />
-          <p className="text-gray-300  mt-3 text-sm">Express.js</p>
-        </div>
-        <div className="text-center flex flex-col items-center">
-          <SiMongodb className="text-5xl text-[#3CCF91]" />
-          <p className="text-gray-300  mt-3 text-sm">Mongodb</p>
-        </div>
-        <div className="text-center flex flex-col items-center">
-          <BiLogoTypescript className="text-5xl text-[#3CCF91]" />
-          <p className="text-gray-300  mt-3 text-sm">Typescript</p>
-        </div>
-        <div className="text-center flex flex-col items-center">
-          <FaGitAlt className="text-5xl text-[#3CCF91]" />
-          <p className="text-gray-300  mt-3 text-sm">Git</p>
-        </div>
-        <div className="text-center flex flex-col items-center">
-          <FaFigma className="text-5xl text-[#3CCF91]" />
-          <p className="text-gray-300  mt-3 text-sm">Figma</p>
-        </div>
-        <div className="text-center flex flex-col items-center">
-          <VscVscode className="text-5xl text-[#3CCF91]" />
-          <p className="text-gray-300  mt-3 text-sm">Vscode</p>
-        </div>
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-14">
+        {mySkills.map((skill, index) => (
+          <div
+            key={index}
+            className="flex flex-col items-center text-center bg-[#070D1E] px-2 pt-5 pb-9 shadow-2xl rounded-3xl"
+          >
+            <img
+              className="w-16 h-16 object-cover"
+              src={skill?.image}
+              alt={skill?.name}
+            />
+            <p className="text-gray-300 text-base font-bold pt-4">
+              {skill?.name}
+            </p>
+          </div>
+        ))}
       </div>
     </div>
   );
