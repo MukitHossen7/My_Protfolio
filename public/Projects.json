@@ -15,7 +15,12 @@
       "Express.js",
       "MongoDB"
     ],
-    "project_improvements": [],
+    "project_improvements": [
+      "Enhance the design for a more immersive and visually appealing food-sharing experience.",
+      "Implement dark mode for better user experience.",
+      "Implement a role-based structure for better organization and usability.",
+      "Add professional animations for a more dynamic and engaging interface."
+    ],
     "live_link": "https://food-sharing-bddd1.web.app",
     "github_link": "https://github.com/MukitHossen7/B10A11-Food-Sharing-Website"
   },
@@ -59,7 +64,7 @@
     ],
     "project_improvements": [
       "Implement dark mode for better user experience.",
-      "Add scaling animations to improve responsiveness.",
+      "Add Skeleton Loader for Faster UI Response.",
       "Improve table and dashboard design for better interaction.",
       "Implement JWT refresh tokens for secure authentication.",
       "Enable email, SMS, and in-app notifications for updates.",
