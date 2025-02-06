@@ -59,7 +59,7 @@
     ],
     "project_improvements": [
       "Implement dark mode for better user experience.",
-      "Add loading spinners and scaling animations to improve responsiveness.",
+      "Add scaling animations to improve responsiveness.",
       "Improve table and dashboard design for better interaction.",
       "Implement JWT refresh tokens for secure authentication.",
       "Enable email, SMS, and in-app notifications for updates.",

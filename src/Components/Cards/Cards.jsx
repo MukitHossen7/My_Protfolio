@@ -23,7 +23,7 @@ const Cards = ({ project }) => {
       {/* Card Content */}
       <div className="flex flex-col justify-between flex-grow px-4 pb-4">
         <div>
-          <h3 className="text-lg font-semibold mt-3  pb-3 text-gray-100">
+          <h3 className="text-lg font-semibold mt-3  pb-2 text-gray-100">
             {name}
           </h3>
           <p className="text-sm text-gray-400 pb-4">
